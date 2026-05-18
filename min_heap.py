@@ -82,9 +82,28 @@ class MinHeap:
 
     def remove_min(self) -> object:
         """
-        TODO: Write this implementation
+        Returns and removes the minimum element from the MinHeap.
+        If the heap is empty, returns MinHeapException.
+        Runtime complexity: O(log N).
         """
-        pass
+        # Check if heap is empty
+        if self.is_empty():
+            raise MinHeapException()
+        # Save min value to return
+        min_value = self._heap[0]
+
+        # Move the last element to root, remove it from end
+        last_element = self._heap.length() - 1
+        self._heap[0] = self._heap[last_element]
+        self._heap.remove_at_index(last_element)
+        if self._heap.is_empty():
+            return min_value
+
+        # Percolate down
+
+        return min_value
+
+
 
     def build_heap(self, da: DynamicArray) -> None:
         """
