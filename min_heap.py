@@ -44,7 +44,19 @@ class MinHeap:
         Inserts an element into the MinHeap.
         Runtime complexity: O(log N)
         """
-        pass
+        self._heap.append(node)
+        current = self._heap.length() - 1
+
+        while current > 0:
+            parent = (current - 1) // 2
+            if self._heap[current] < self._heap[parent]:
+                temp = self._heap[parent]
+                self._heap[parent] = self._heap[current]
+                self._heap[current] = temp
+                current = parent
+            else:
+                break
+
 
     def is_empty(self) -> bool:
         """
