@@ -101,9 +101,11 @@ class MinHeap:
 
     def clear(self) -> None:
         """
-        TODO: Write this implementation
+        Clears the MinHeap
+        Runtime complexity: O(1)
         """
-        pass
+        self._heap = DynamicArray()
+        return None
 
 
 def heapsort(da: DynamicArray) -> None:
