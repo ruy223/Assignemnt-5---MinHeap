@@ -44,11 +44,14 @@ class MinHeap:
         Inserts an element into the MinHeap.
         Runtime complexity: O(log N)
         """
+        # Insert the new node at the end of the heap
         self._heap.append(node)
+        # start at last index
         current = self._heap.length() - 1
 
         while current > 0:
             parent = (current - 1) // 2
+            # If current node is smaller than its parent, swap them
             if self._heap[current] < self._heap[parent]:
                 temp = self._heap[parent]
                 self._heap[parent] = self._heap[current]
