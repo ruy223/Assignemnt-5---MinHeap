@@ -100,6 +100,7 @@ class MinHeap:
             return min_value
 
         # Percolate down
+        _percolate_down(self._heap, 0)
 
         return min_value
 
