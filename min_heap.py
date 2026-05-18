@@ -94,9 +94,10 @@ class MinHeap:
 
     def size(self) -> int:
         """
-        TODO: Write this implementation
+        Returns the number of elements in the MinHeap
+        Runtime complexity: O(1)
         """
-        pass
+        return self._heap.length()
 
     def clear(self) -> None:
         """
