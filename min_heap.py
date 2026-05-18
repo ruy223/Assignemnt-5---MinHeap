@@ -84,7 +84,7 @@ class MinHeap:
         """
         Returns and removes the minimum element from the MinHeap.
         If the heap is empty, returns MinHeapException.
-        Runtime complexity: O(log N).
+        Runtime complexity: amortized O(log N).
         """
         # Check if heap is empty
         if self.is_empty():
@@ -140,10 +140,28 @@ def heapsort(da: DynamicArray) -> None:
 
 def _percolate_down(da: DynamicArray, parent: int) -> None:
     """
-    TODO: Write your implementation
+    Percolates an element down the heap to restore heap property.
+    Swaps with the smaller child until the element is in the correct position.
     """
-    pass
+    left_child = (2 * parent) + 1
+    right_child = (2 * parent) + 2
 
+    while left_child < da.length():
+        # Find the smaller child
+        smaller_child = left_child
+        if right_child < da.length() and da[right_child] < da[left_child]:
+            smaller_child = right_child
+        # If smaller child is less than parent, swap
+        if da[smaller_child] < da[parent]:
+            temp = da[parent]
+            da[parent] = da[smaller_child]
+            da[smaller_child] = temp
+            # Move parent down and recalculate children
+            parent = smaller_child
+            left_child = (2 * parent) + 1
+            right_child = (2 * parent) + 2
+        else:
+            break
 
 # ------------------- BASIC TESTING -----------------------------------------
 
