@@ -63,15 +63,22 @@ class MinHeap:
 
     def is_empty(self) -> bool:
         """
-        TODO: Write this implementation
+        Returns true if the heap is empty, false otherwise
+        Runtime complexity: O(1)
         """
-        pass
+        return self._heap.length() == 0
 
     def get_min(self) -> object:
         """
-        TODO: Write this implementation
+        Returns the minimum element in the MinHeap
+        Does not remove the element from the heap.
+        If the heap is empty, returns MinHeapException.
+        Runtime complexity: O(1)
         """
-        pass
+        # Checks if heap is empty
+        if self.is_empty():
+            raise MinHeapException()
+        return self._heap[0]
 
     def remove_min(self) -> object:
         """
