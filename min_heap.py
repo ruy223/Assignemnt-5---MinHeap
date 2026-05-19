@@ -108,9 +108,18 @@ class MinHeap:
 
     def build_heap(self, da: DynamicArray) -> None:
         """
-        TODO: Write this implementation
+        Receives a DynamicArray and builds a MinHeap.
+        Runtime complexity: O(N)
         """
-        pass
+        # Clear current heap
+        self._heap = DynamicArray(da)
+        # Last non-leaf index
+        start = (self._heap.length() // 2 ) - 1
+
+        #Loop and go backwards to zero from start
+        for i in range(start, -1, -1):
+            _percolate_down(self._heap, i)
+
 
     def size(self) -> int:
         """
