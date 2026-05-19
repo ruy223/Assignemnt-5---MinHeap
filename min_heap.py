@@ -171,7 +171,7 @@ def heapsort(da: DynamicArray) -> None:
                 break
     # Phase 2 - remove from heap
     end = da.length() - 1
-    while end > 2:
+    while end > 1:
         # swap root with end
         temp = da[0]
         da[0] = da[end]
@@ -181,7 +181,7 @@ def heapsort(da: DynamicArray) -> None:
         parent = 0
         left_child = (2 * parent) + 1
         right_child = (2 * parent) + 2
-        while left_child < end:
+        while left_child <= end:
             # Find the larger child
             larger_child = left_child
             if right_child < end and da[right_child] > da[left_child]:
