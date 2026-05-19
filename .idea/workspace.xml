@@ -195,7 +195,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779200597951</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="heapsort(), finished, 2nd phase was mostly copying the 1st phase with some small changes using end instead of da.length()">
+      <option name="closed" value="true" />
+      <created>1779200953008</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1779200953009</updated>
+    </task>
+    <task id="LOCAL-00019" summary="heapsort(), finished, 2nd phase was mostly copying the 1st phase with some small changes using end instead of da.length()">
+      <option name="closed" value="true" />
+      <created>1779201104941</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1779201104941</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

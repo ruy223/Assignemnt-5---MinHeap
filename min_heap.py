@@ -171,7 +171,7 @@ def heapsort(da: DynamicArray) -> None:
                 break
     # Phase 2 - remove from heap
     end = da.length() - 1
-    while end > 0:
+    while end > 2:
         # swap root with end
         temp = da[0]
         da[0] = da[end]
