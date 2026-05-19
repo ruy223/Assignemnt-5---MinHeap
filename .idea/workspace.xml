@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24fe647d-de76-4a3d-97ce-1a89d61ea44b" name="Changes" comment="heapsort(), finished, 2nd phase was mostly copying the 1st phase with some small changes using end instead of da.length()">
-      <change beforePath="$PROJECT_DIR$/min_heap.py" beforeDir="false" afterPath="$PROJECT_DIR$/min_heap.py" afterDir="false" />
-    </list>
+    <list default="true" id="24fe647d-de76-4a3d-97ce-1a89d61ea44b" name="Changes" comment="heapsort(), finished, 2nd phase was mostly copying the 1st phase with some small changes using end instead of da.length()" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -221,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779201331756</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="heapsort(), finished, 2nd phase was mostly copying the 1st phase with some small changes using end instead of da.length()">
+      <option name="closed" value="true" />
+      <created>1779201693774</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1779201693774</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
