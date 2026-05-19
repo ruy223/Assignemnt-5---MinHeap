@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24fe647d-de76-4a3d-97ce-1a89d61ea44b" name="Changes" comment="remove_min()  completed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/min_heap.py" beforeDir="false" afterPath="$PROJECT_DIR$/min_heap.py" afterDir="false" />
-    </list>
+    <list default="true" id="24fe647d-de76-4a3d-97ce-1a89d61ea44b" name="Changes" comment="build_heap() done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779127233169</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="build_heap() done">
+      <option name="closed" value="true" />
+      <created>1779190580858</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1779190580858</updated>
+    </task>
+    <task id="LOCAL-00011" summary="build_heap() done">
+      <option name="closed" value="true" />
+      <created>1779190689632</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1779190689632</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -143,6 +156,7 @@
     <MESSAGE value="clear() completed" />
     <MESSAGE value="remove_min() half completed" />
     <MESSAGE value="remove_min()  completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove_min()  completed" />
+    <MESSAGE value="build_heap() done" />
+    <option name="LAST_COMMIT_MESSAGE" value="build_heap() done" />
   </component>
 </project>

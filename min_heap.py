@@ -141,7 +141,8 @@ class MinHeap:
 
 def heapsort(da: DynamicArray) -> None:
     """
-    TODO: Write this implementation
+    Receives a DynamicArray and sorts it in non-decreasing order.
+    Runtime complexity: O(N log N).
     """
     pass
 
