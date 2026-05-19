@@ -4,7 +4,7 @@
 # Assignment 4: MinHeap
 # Due Date: 05/25/2026
 # Description:
-
+from multiprocessing.spawn import spawn_main
 
 from dynamic_array import *
 
@@ -154,24 +154,25 @@ def heapsort(da: DynamicArray) -> None:
         right_child = (2 * parent) + 2
 
         while left_child < da.length():
-            # Find the larger child
-            larger_child = left_child
-            if right_child < da.length() and da[right_child] > da[left_child]:
-                larger_child = right_child
-            # If larger child is bigger than parent, swap
-            if da[larger_child] > da[parent]:
+            # Find the smaller child
+            smaller_child = left_child
+            if right_child < da.length() and da[right_child] < da[left_child]:
+                smaller_child = right_child
+            # If smaller child is less than parent, swap
+            if da[smaller_child] < da[parent]:
                 temp = da[parent]
-                da[parent] = da[larger_child]
-                da[larger_child] = temp
+                da[parent] = da[smaller_child]
+                da[smaller_child] = temp
                 # Move parent down and recalculate children
-                parent = larger_child
+                parent = smaller_child
                 left_child = (2 * parent) + 1
                 right_child = (2 * parent) + 2
             else:
                 break
+
     # Phase 2 - remove from heap
     end = da.length() - 1
-    while end > 1:
+    while end > 0:
         # swap root with end
         temp = da[0]
         da[0] = da[end]
@@ -179,20 +180,20 @@ def heapsort(da: DynamicArray) -> None:
         end -= 1
         # percolate down from 0, stopping at end
         parent = 0
-        left_child = (2 * parent) + 1
-        right_child = (2 * parent) + 2
+        left_child = 1
+        right_child = 2
         while left_child <= end:
-            # Find the larger child
-            larger_child = left_child
-            if right_child <= end and da[right_child] > da[left_child]:
-                larger_child = right_child
-            # If larger child is bigger than parent, swap
-            if da[larger_child] > da[parent]:
+            # Find the smaller child
+            smaller_child = left_child
+            if right_child <= end and da[right_child] < da[left_child]:
+                smaller_child = right_child
+            # If smaller child is less than parent, swap
+            if da[smaller_child] < da[parent]:
                 temp = da[parent]
-                da[parent] = da[larger_child]
-                da[larger_child] = temp
+                da[parent] = da[smaller_child]
+                da[smaller_child] = temp
                 # Move parent down and recalculate children
-                parent = larger_child
+                parent = smaller_child
                 left_child = (2 * parent) + 1
                 right_child = (2 * parent) + 2
             else:
