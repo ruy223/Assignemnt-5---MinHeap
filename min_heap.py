@@ -116,9 +116,11 @@ class MinHeap:
         # Last non-leaf index
         start = (self._heap.length() // 2 ) - 1
 
-        #Loop and go backwards to zero from start
-        for i in range(start, -1, -1):
+        # O(N) because _percolate_down() does less work at the bottom
+        # of the tree than add()
+        for i in range(start, -1, -1):  #Loop and go backwards to zero from start
             _percolate_down(self._heap, i)
+
 
 
     def size(self) -> int:
