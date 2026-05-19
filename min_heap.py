@@ -197,7 +197,7 @@ def heapsort(da: DynamicArray) -> None:
                 right_child = (2 * parent) + 2
             else:
                 break
-
+##
 # It's highly recommended that you implement the following optional          #
 # helper function for percolating elements down the MinHeap. You can call    #
 # this from inside the MinHeap class. You may edit the function definition.  #
