@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24fe647d-de76-4a3d-97ce-1a89d61ea44b" name="Changes" comment="heapsort() started">
+    <list default="true" id="24fe647d-de76-4a3d-97ce-1a89d61ea44b" name="Changes" comment="heapsort(), had to add a modified version of _percolate_down() in oder to mimic the operations of a MaxHeap">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/min_heap.py" beforeDir="false" afterPath="$PROJECT_DIR$/min_heap.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779191676552</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="heapsort(), had to add a modified version of _percolate_down() in oder to mimic the operations of a MaxHeap">
+      <option name="closed" value="true" />
+      <created>1779192264316</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1779192264316</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -168,6 +177,7 @@
     <MESSAGE value="remove_min()  completed" />
     <MESSAGE value="build_heap() done" />
     <MESSAGE value="heapsort() started" />
-    <option name="LAST_COMMIT_MESSAGE" value="heapsort() started" />
+    <MESSAGE value="heapsort(), had to add a modified version of _percolate_down() in oder to mimic the operations of a MaxHeap" />
+    <option name="LAST_COMMIT_MESSAGE" value="heapsort(), had to add a modified version of _percolate_down() in oder to mimic the operations of a MaxHeap" />
   </component>
 </project>

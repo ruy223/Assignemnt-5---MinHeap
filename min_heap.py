@@ -144,6 +144,7 @@ def heapsort(da: DynamicArray) -> None:
     Receives a DynamicArray and sorts it in non-decreasing order.
     Runtime complexity: O(N log N).
     """
+    # Phase 1 - add to heap
     # Modified _percolate_down, to sort in non-ascending order (Maxheap)
 
     start = (da.length() // 2) - 1
@@ -168,7 +169,34 @@ def heapsort(da: DynamicArray) -> None:
                 right_child = (2 * parent) + 2
             else:
                 break
-
+    # Phase 2 - remove from heap
+    end = da.length() - 1
+    while end > 0:
+        # swap root with end
+        temp = da[0]
+        da[0] = da[end]
+        da[end] = temp
+        end -=
+        # percolate down from 0, stopping at end
+        parent = 0
+        left_child = (2 * parent) + 1
+        right_child = (2 * parent) + 2
+        while left_child < end:
+            # Find the smaller child
+            larger_child = left_child
+            if right_child < end and da[right_child] > da[left_child]:
+                larger_child = right_child
+            # If smaller child is less than parent, swap
+            if da[larger_child] > da[parent]:
+                temp = da[parent]
+                da[parent] = da[larger_child]
+                da[larger_child] = temp
+                # Move parent down and recalculate children
+                parent = larger_child
+                left_child = (2 * parent) + 1
+                right_child = (2 * parent) + 2
+            else:
+                break
 
 # It's highly recommended that you implement the following optional          #
 # helper function for percolating elements down the MinHeap. You can call    #
