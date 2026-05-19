@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24fe647d-de76-4a3d-97ce-1a89d61ea44b" name="Changes" comment="heapsort(), had to add a modified version of _percolate_down() in oder to mimic the operations of a MaxHeap">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/min_heap.py" beforeDir="false" afterPath="$PROJECT_DIR$/min_heap.py" afterDir="false" />
-    </list>
+    <list default="true" id="24fe647d-de76-4a3d-97ce-1a89d61ea44b" name="Changes" comment="heapsort(), finished, 2nd phase was mostly copying the 1st phase with some small changes using end instead of da.length()" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,7 +162,31 @@
       <option name="project" value="LOCAL" />
       <updated>1779192264316</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="heapsort(), finished, 2nd phase was mostly copying the 1st phase with some small changes using end instead of da.length()">
+      <option name="closed" value="true" />
+      <created>1779192727594</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1779192727594</updated>
+    </task>
+    <task id="LOCAL-00015" summary="heapsort(), finished, 2nd phase was mostly copying the 1st phase with some small changes using end instead of da.length()">
+      <option name="closed" value="true" />
+      <created>1779192787376</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1779192787376</updated>
+    </task>
+    <task id="LOCAL-00016" summary="heapsort(), finished, 2nd phase was mostly copying the 1st phase with some small changes using end instead of da.length()">
+      <option name="closed" value="true" />
+      <created>1779200528166</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1779200528166</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -178,6 +199,7 @@
     <MESSAGE value="build_heap() done" />
     <MESSAGE value="heapsort() started" />
     <MESSAGE value="heapsort(), had to add a modified version of _percolate_down() in oder to mimic the operations of a MaxHeap" />
-    <option name="LAST_COMMIT_MESSAGE" value="heapsort(), had to add a modified version of _percolate_down() in oder to mimic the operations of a MaxHeap" />
+    <MESSAGE value="heapsort(), finished, 2nd phase was mostly copying the 1st phase with some small changes using end instead of da.length()" />
+    <option name="LAST_COMMIT_MESSAGE" value="heapsort(), finished, 2nd phase was mostly copying the 1st phase with some small changes using end instead of da.length()" />
   </component>
 </project>

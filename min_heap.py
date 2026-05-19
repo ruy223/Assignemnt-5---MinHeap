@@ -176,7 +176,7 @@ def heapsort(da: DynamicArray) -> None:
         temp = da[0]
         da[0] = da[end]
         da[end] = temp
-        end -=
+        end -= 1
         # percolate down from 0, stopping at end
         parent = 0
         left_child = (2 * parent) + 1
